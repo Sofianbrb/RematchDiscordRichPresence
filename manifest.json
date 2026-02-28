@@ -6,9 +6,9 @@
     "version": "1.0.0",
     "minimum-overwolf-version": "0.120.1.0",
     "author": "Sofianbrb",
-    "icon": "icon.png",
-    "launcher_icon": "launcher_icon.ico",
-    "icon_gray": "icon_gray.png",
+    "icon": "icons/icon.png",
+    "launcher_icon": "icons/launcher_icon.ico",
+    "icon_gray": "icons/icon_gray.png",
     "description": "Enables rich presence for the game Rematch (Shows in match/lobby and score)"
   },
   "permissions": ["Extensions"],
@@ -20,7 +20,7 @@
     "start_window": "index",
     "windows": {
       "index": {
-        "file": "index.html",
+        "file": "app/index.html",
         "transparent": true,
         "clickthrough": true,
         "resizable": false,
