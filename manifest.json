@@ -1,0 +1,55 @@
+{
+  "manifest_version": "1",
+  "type": "WebApp",
+  "meta": {
+    "name": "Discord rich presence for Rematch",
+    "version": "1.0.0",
+    "minimum-overwolf-version": "0.120.1.0",
+    "author": "Sofianbrb",
+    "icon": "icon.png",
+    "launcher_icon": "launcher_icon.ico",
+    "icon_gray": "icon_gray.png",
+    "description": "Enables rich presence for the game Rematch (Shows in match/lobby and score)"
+  },
+  "permissions": ["Extensions"],
+  "data": {
+    "game_targeting": {
+      "type": "dedicated",
+      "game_ids": [26120]
+    },
+    "start_window": "index",
+    "windows": {
+      "index": {
+        "file": "index.html",
+        "transparent": true,
+        "clickthrough": true,
+        "resizable": false,
+        "show_in_taskbar": false,
+        "size": {
+          "width": 1,
+          "height": 1
+        },
+        "start_position": {
+          "Top": 10,
+          "Left": 10
+        }
+      }
+    },
+    "game_events": [26120],
+    "launch_events": [
+      {
+        "event": "GameLaunch",
+        "event_data": {
+          "game_ids": [26120]
+        },
+        "start_minimized": true
+      }
+    ],
+    "extra-objects": {
+      "discordPlugin": {
+        "file": "plugins/discord-rich-presence.dll",
+        "class": "com.overwolf.discord.DiscordRichPresence"
+      }
+    }
+  }
+}

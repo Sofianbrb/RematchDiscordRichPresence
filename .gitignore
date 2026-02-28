@@ -1,0 +1,6 @@
+*.opk
+*.tmp
+*.temp
+Thumbs.db
+.DS_Store
+*.code-workspace
